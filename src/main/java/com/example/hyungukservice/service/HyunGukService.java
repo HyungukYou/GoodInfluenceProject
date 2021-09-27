@@ -23,8 +23,6 @@ public class HyunGukService {
     @PostConstruct
     public void getGoodInfluence() throws IOException {
 
-        Document doc = Jsoup.connect(HYUN_SERVICE_URL).get();
-
         Document document = Jsoup.connect(HYUN_SERVICE_URL).get();
         Elements elements = document.select("span a");
         List<Element> str = new ArrayList<>(elements.subList(10,11));
