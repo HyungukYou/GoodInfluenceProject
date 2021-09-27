@@ -24,7 +24,6 @@ public class HyunGukService {
     public void getGoodInfluence() throws IOException {
 
         Document doc = Jsoup.connect(HYUN_SERVICE_URL).get();
-        Elements contents = doc.select("table tbody tr");
 
         Document document = Jsoup.connect(HYUN_SERVICE_URL).get();
         Elements elements = document.select("span a");
